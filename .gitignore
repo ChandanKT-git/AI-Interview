@@ -1,0 +1,33 @@
+# Environments
+.env
+.env.*
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.pytest_cache/
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# System
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Credentials
+credentials.json
+*.pem
+*.key
+.credentials
