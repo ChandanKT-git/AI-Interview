@@ -3,7 +3,7 @@ import { useParams, Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Cell, LabelList } from "recharts";
 import api from "../lib/api";
-import { Button, Card, Spinner, Pill, fadeUp } from "../components/ui";
+import { Button, Card, Spinner, fadeUp } from "../components/ui";
 import {
   Trophy, ThumbsUp, AlertTriangle, Lightbulb, BookOpen, RotateCcw,
   LayoutDashboard, ChevronDown, Share2, Download, Check, Mic,
