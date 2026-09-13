@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #002fa7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  background-color: #ffffff;
+  color: #111111;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-heading {
+  font-family: "Cabinet Grotesk", "IBM Plex Sans", sans-serif;
+}
+
+::selection {
+  background: #002fa7;
+  color: #ffffff;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #dee2e6;
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c2c8ce;
+}
+
+.overline {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #6c757d;
+}
+
+.grain {
+  background-image: radial-gradient(#00000008 1px, transparent 1px);
+  background-size: 4px 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media print {
+  header,
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #fff;
+  }
+  .print-area {
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+}
